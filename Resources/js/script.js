@@ -60,4 +60,22 @@ $(document).ready(function() {
 		}
 	});
 
+	/* Maps */
+
+	var map = new GMaps({
+	  div: '.map',
+	  lat: 44.1946806,
+	  lng: -102.04,
+	  zoom: 7
+	});
+
+	map.addMarker({
+		lat: 44.1946806,
+	  	lng: -102.490828,
+		title: 'South Dakota',
+		infoWindow: {
+  		content: '<p>Our location</p>'
+		}
+	});
+
 });
